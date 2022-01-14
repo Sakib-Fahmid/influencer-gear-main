@@ -12,17 +12,41 @@
             padding: 0;
             box-sizing: border-box;
         }
-        body{
+        body , button{
             font-family: 'Poppins', sans-serif;
             max-width: 1200px;
             margin: 0 auto;
         }
         .menu-heading{
            font-size: 24px;
-           font-weight: 700;
+           font-weight: 700; 
         }
         nav{
             padding: 30px;
+        }
+        article.half-width h1{
+            font-size: 52px;
+        }
+        .half-width{
+            width: 50%;
+        }
+        article{
+            border: 2px solid red;
+        }
+        .button-design{
+            background: #E02C6D;
+            padding: 15px;
+            border-radius: 25px;
+            color: white;
+            width: 196px;
+            height: 44px;
+            font-weight: 600;
+            border: none;
+        }
+        .button-design span{
+            display: flex;  
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
@@ -35,6 +59,15 @@
                 Influencer Gadgets
             </h3>
         </nav>
+        <article class="half-width">
+            <h1>Start your Journey as Influencer</h1>
+            <p>To become a succesfull influencer ,gadgets and gears play a significant role. Working as the main tool for showcasing your talents to the world. Go to below for purchasing</p>
+            <button class="button-design">
+                <span>
+                    Prebook now
+                </span> 
+            </button>
+        </article>
     </header>
 </body>
 </html>
