@@ -30,9 +30,7 @@
         .half-width{
             width: 50%;
         }
-        article{
-            border: 2px solid red;
-        }
+      
         .button-design{
             background: #E02C6D;
             padding: 15px;
@@ -48,7 +46,14 @@
             justify-content: center;
             align-items: center;
         }
+        article , section{
+            border: 2px solid red;
+        }
+        .fa-arrow-right{
+            margin-left: 15px;
+        }
     </style>
+    <script src="https://kit.fontawesome.com/9be23e5cfb.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -59,17 +64,22 @@
                 Influencer Gadgets
             </h3>
         </nav>
-        <article class="half-width">
-            <h1>Start your Journey as Influencer</h1>
-            <br>
-            <p>To become a succesfull influencer ,gadgets and gears play a significant role. Working as the main tool for showcasing your talents to the world. Go to below for purchasing</p>
-            <br>
-            <button class="button-design">
-                <span>
-                    Prebook now
-                </span> 
-            </button>
-        </article>
+        <section>
+            <article class="half-width">
+                <h1>Start your Journey as Influencer</h1>
+                <br>
+                <p>To become a succesfull influencer ,gadgets and gears play a significant role. Working as the main tool for showcasing your talents to the world. Go to below for purchasing</p>
+                <br>
+                <button class="button-design">
+                    <span>
+                        Prebook now    
+                        <i class="fas fa-arrow-right"></i>
+                    </span> 
+
+                </button>
+            </article>
+        </section>
+        
     </header>
 </body>
 </html>
