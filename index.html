@@ -54,7 +54,7 @@
         /* article , section{
             border: 2px solid red;
         } */
-        section{
+        .first-section{
             display: flex;
         }
         .fa-arrow-right{
@@ -79,13 +79,16 @@
             margin: 70px auto;
             margin-top: 10px;
             margin-bottom: 10px;
-            border: 20px solid red;
+            /* border: 20px solid red; */
         }
-        .mid-sec{
+        /* .mid-sec{
             border: 5px solid green;
         }
         main{
             border: 2px solid blue;
+        } */
+        .card-item-img{
+            border: 2px solid red;
         }
     </style>
     <script src="https://kit.fontawesome.com/9be23e5cfb.js" crossorigin="anonymous"></script>
@@ -100,7 +103,7 @@
             </h3>
         </nav>
         <!-- first section starts here  -->
-        <section>
+        <section class="first-section">
             <article class="half-width">
                 <h1>Start your Journey as Influencer</h1>
                 <br>
@@ -123,6 +126,11 @@
     <main>
         <section class="mid-sec">
             <h3 class="mid-sec-heading">Popular Collection</h3>
+            <div class="item-listing">
+                <article>
+                    <div class="card-item-img"><img src="/images/main-camera.png" alt=""></div>
+                </article>
+            </div>
         </section>
     </main>
 </body>
