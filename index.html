@@ -41,15 +41,19 @@
             height: 44px;
             font-weight: 600;
             border: none;
+            text-align: center;
         }
         .button-design span{
             display: flex;  
             justify-content: center;
             align-items: center;
         }
-        article , section{
-            border: 2px solid red;
+        .button-design:hover{
+            cursor: pointer;
         }
+        /* article , section{
+            border: 2px solid red;
+        } */
         section{
             display: flex;
         }
@@ -61,7 +65,15 @@
             border-radius: 10px;
         }
         .first-section-image{
-            width: 100%;
+            width:90%;
+            border-radius: 20px;
+            height: 100%;
+            padding-left: 140px;
+        }
+        .first-sec-img-side:hover{
+            transform: rotate(360deg);
+            transition: transform 2s linear;
+            position: relative;
         }
     </style>
     <script src="https://kit.fontawesome.com/9be23e5cfb.js" crossorigin="anonymous"></script>
@@ -75,6 +87,8 @@
                 Influencer Gadgets
             </h3>
         </nav>
+        <!-- header ends here  -->
+        <!-- first section starts here  -->
         <section>
             <article class="half-width">
                 <h1>Start your Journey as Influencer</h1>
@@ -83,17 +97,15 @@
                 <br>
                 <button class="button-design">
                     <span>
-                        Prebook now    
-                        <i class="fas fa-arrow-right"></i>
+                        Prebook now<i class="fas fa-arrow-right"></i>
                     </span> 
-
                 </button>
             </article>
-            <div>
-                <img class="first-section-image" src="/images/main-camera.png" alt="camera photo">
+            <div class="first-sec-img-side">
+                <img class="first-section-image" src="./images/main-camera.png" alt="camera photo">
             </div>
         </section>
-        
+        <!-- first section ends here  -->
     </header>
 </body>
 </html>
