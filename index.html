@@ -65,21 +65,21 @@
             border-radius: 10px;
         }
         .first-section-image{
-            width:90%;
+            width:100%;
             border-radius: 20px;
             height: 100%;
             padding-left: 140px;
         }
         .first-sec-img-side:hover{
-            transform: rotate(360deg);
+            transform: rotate(360deg) scale(2);
             transition: transform 2s linear;
-            position: relative;
+            animation: transition duration timing-function delay iteration-count direction fill-mode;
         }
         .mid-sec-heading{
-            margin: 70px auto;
-            margin-top: 10px;
-            margin-bottom: 10px;
             /* border: 20px solid red; */
+            text-align: center;
+            margin: 100px 0;
+            font-size: 25px;
         }
         /* .mid-sec{
             border: 5px solid green;
@@ -88,7 +88,8 @@
             border: 2px solid blue;
         } */
         .card-item-img{
-            border: 2px solid red;
+            /* border: 2px solid red; */
+            height: 300px;
         }
     </style>
     <script src="https://kit.fontawesome.com/9be23e5cfb.js" crossorigin="anonymous"></script>
@@ -128,7 +129,14 @@
             <h3 class="mid-sec-heading">Popular Collection</h3>
             <div class="item-listing">
                 <article>
-                    <div class="card-item-img"><img src="/images/main-camera.png" alt=""></div>
+                    <div class="card-item-img"><img src="./images/airpod.png" alt="photo"></div>
+
+                    <div class="image-info">
+                        <h3>Flex Tripod</h3>
+                        <p>$50</p>
+                        <div class="item-rating"></div>
+                        <div class="photo-details"></div>
+                    </div>
                 </article>
             </div>
         </section>
