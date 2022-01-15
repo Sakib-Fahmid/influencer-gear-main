@@ -18,16 +18,9 @@ ol, li {
 }
 
 .carousel__viewport {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  height: 300px;
   display: flex;
   overflow-x: scroll;
-  counter-reset: item;
-  scroll-behavior: auto;
-  scroll-snap-type: x mandatory;
 }
 
 .carousel__slide {
@@ -93,3 +86,10 @@ ol, li {
   margin: 0 auto;
 }
 
+.review-info{
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.review-info img{
+  width: 40%;
+}
