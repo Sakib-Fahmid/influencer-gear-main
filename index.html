@@ -237,11 +237,39 @@
                 padding: 30px;
             }
             .first-section-image{
-                width: 90%;
-                /* background-color: chartreuse; */
+                width: 50%;
+                background-color: chartreuse;
+                padding-left: 20px;
+                position: relative;
+                left: 100px;
             }
             .item-listing{
                 grid-template-columns: 1fr;
+            }
+        }
+
+        @media only screen and (min-width : 689px) and (max-width : 992px){
+            .menu-heading{
+                text-align: center;
+            }
+            .first-section{
+                flex-direction: column;
+                background-color: blue;
+            }
+            .half-width{
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 30px;
+            }
+            .first-section-image{
+                width: 50%;
+                background-color: chartreuse;
+                padding-left: 20px;
+                position: relative;
+                left: 170px;
+            }
+            .item-listing{
+                grid-template-columns: 1fr 1fr;
             }
         }
     </style>
