@@ -62,9 +62,6 @@
             cursor: pointer;
         }
 
-        /* article , section{
-            border: 2px solid red;
-        } */
         .first-section {
             display: flex;
         }
@@ -91,14 +88,12 @@
         }
 
         .mid-sec-heading {
-            /* border: 20px solid red; */
             text-align: center;
             margin: 100px 0;
             font-size: 35px;
         }
 
         .mid-sec {
-            /* border: 5px solid green; */
             margin-bottom: 100px;
         }
 
@@ -107,14 +102,12 @@
         }
 
         .item-img {
-            /* border: 2px solid red; */
             height: 300px;
         }
 
         .item-card {
             width: 329px;
             height: 476px;
-            /* border: 2px solid red; */
             padding: 10px;
             box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, .05);
             border-radius: 10px;
@@ -131,12 +124,10 @@
         }
 
         .item-listing {
-            /* border: 2px solid green; */
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             row-gap: 20px;
             padding: 50px;
-            /* text-align: center; */
             margin-left: auto;
             margin-right: auto;
 
@@ -149,13 +140,11 @@
         .fa-star {
             height: 15px;
             width: 15px;
-            /* padding-left: 10px; */
         }
 
         .number-rating {
             font-size: 14px;
             text-align: center;
-            /* vertical-align: auto; */
             height: 15px;
             width: 15px;
             margin-left: 25px;
@@ -178,8 +167,6 @@
         }
 
         .footer-container {
-            /* border: 15px solid red; */
-            /* padding: 30px; */
             text-align: center;
         }
 
@@ -189,11 +176,9 @@
 
         footer {
             background-color: #0A0826;
-            /* background: violet; */
             height: 200px;
             padding-top: 50px;
             padding-bottom: 40px;
-            /* font-family: 'Moon Dance', cursive; */
             font-size: 30px;
             color: white;
             position: absolute;
@@ -222,6 +207,7 @@
             left: 0;
             animation: 20s slider infinite;
         }
+        /* mobile layout starts here  */
         @media only screen and (max-width : 688px) {
             .menu-heading{
                 text-align: center;
@@ -244,7 +230,7 @@
                 grid-template-columns: 1fr;
             }
         }
-
+        /* tab layout starts here  */
         @media only screen and (min-width : 689px) and (max-width : 992px){
             .menu-heading{
                 text-align: center;
