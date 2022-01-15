@@ -28,7 +28,7 @@ ol, li {
 }
 
 .carousel__slide:nth-child(even) {
-  background-color: ##E02C6D;
+  background-color: #E02C6D;
 }
 
 .carousel__slide:before {
