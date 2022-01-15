@@ -172,17 +172,25 @@
             right: 0;
             
         }
-        .slider h1{
+        .extra-section h1{
             font-size: 40px;
             text-align: center;
         }
         figure{
             border: 2px solid red;
         }
-        .slider{
+        #slider{
             overflow: hidden;
         }
+        #slider figure{
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+        }
     </style>
+    <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/9be23e5cfb.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -409,13 +417,56 @@
                 </span>
             </aside>
         </section>
-        <section class="slider">
-            <h1>Influencer's review</h2>
-            <figure>
-                <img src="./images/jhankar.png" alt="jhankar mahabub photo">
-                <img src="./images/sabur.png" alt="zahed sabur photo">
-                <img src="./images/sumit.jpg" alt="sumit saha photo">
-            </figure>
+        <section class="extra-section">
+            <h1>Influencer's review</h1>
+            <section class="carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                  <li id="carousel__slide1"
+                      tabindex="0"
+                      class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <a href="#carousel__slide4"
+                         class="carousel__prev">Go to last slide</a>
+                      <a href="#carousel__slide2"
+                         class="carousel__next">Go to next slide</a>
+                    </div>
+                  </li>
+                  <li id="carousel__slide2"
+                      tabindex="0"
+                      class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1"
+                       class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide3"
+                       class="carousel__next">Go to next slide</a>
+                  </li>
+                  <li id="carousel__slide3"
+                      tabindex="0"
+                      class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2"
+                       class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide4"
+                       class="carousel__next">Go to next slide</a>
+                  </li>
+                </ol>
+                <aside class="carousel__navigation">
+                  <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide1"
+                         class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide2"
+                         class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide3"
+                         class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                  </ol>
+                </aside>
+              </section>
         </section>
     </main>
     <!-- main ends here  -->
