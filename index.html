@@ -173,7 +173,6 @@
         }
 
         .footer h3 {
-            /* .menu-heading{ */
             font-size: 24px;
             font-weight: 700;
         }
@@ -222,6 +221,25 @@
             margin: 0;
             left: 0;
             animation: 20s slider infinite;
+        }
+        @media only screen and (max-width : 688px) {
+            .menu-heading{
+                text-align: center;
+            }
+            .first-section{
+                flex-direction: column;
+                background-color: aqua;
+            }
+            .half-width{
+                /* background-color: blue; */
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 30px;
+            }
+            .first-section-image{
+                width: 90%;
+                /* background-color: chartreuse; */
+            }
         }
     </style>
     <link rel="stylesheet" href="styles/style.css">
@@ -453,6 +471,7 @@
                 </span>
             </aside>
         </section>
+        <!-- bonus section starts here  -->
         <section class="extra-section">
             <h1>Influencer's review</h1>
             <section class="carousel" aria-label="Gallery">
@@ -495,6 +514,7 @@
                 </aside>
             </section>
         </section>
+        <!-- bonus section ends here  -->
     </main>
     <!-- main ends here  -->
     <!-- footer starts here  -->
