@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,39 @@
     <title>Influencer Gear</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-        *{
+
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body , button{
+
+        body,
+        button {
             font-family: 'Poppins', sans-serif;
             max-width: 1200px;
             margin: 0 auto;
         }
-        .menu-heading{
-           font-size: 24px;
-           font-weight: 700; 
+
+        .menu-heading {
+            font-size: 24px;
+            font-weight: 700;
         }
-        nav{
+
+        nav {
             padding: 30px;
             margin-bottom: 100px;
         }
-        article.half-width h1{
+
+        article.half-width h1 {
             font-size: 52px;
         }
-        .half-width{
+
+        .half-width {
             width: 50%;
         }
-      
-        .button-design{
+
+        .button-design {
             background: #E02C6D;
             padding: 15px;
             border-radius: 25px;
@@ -43,91 +51,108 @@
             border: none;
             text-align: center;
         }
-        .button-design span{
-            display: flex;  
+
+        .button-design span {
+            display: flex;
             justify-content: center;
             align-items: center;
         }
-        .button-design:hover{
+
+        .button-design:hover {
             cursor: pointer;
         }
+
         /* article , section{
             border: 2px solid red;
         } */
-        .first-section{
+        .first-section {
             display: flex;
         }
-        .fa-arrow-right{
+
+        .fa-arrow-right {
             margin-left: 15px;
-            padding : 5px;
+            padding: 5px;
             background-color: white;
-            color:#E02C6D;
+            color: #E02C6D;
             border-radius: 10px;
         }
-        .first-section-image{
-            width:100%;
+
+        .first-section-image {
+            width: 100%;
             border-radius: 20px;
             height: 100%;
             padding-left: 140px;
         }
-        .first-sec-img-side:hover{
+
+        .first-sec-img-side:hover {
             transform: rotate(360deg) scale(2);
             transition: transform 2s linear;
             animation: transition duration timing-function delay iteration-count direction fill-mode;
         }
-        .mid-sec-heading{
+
+        .mid-sec-heading {
             /* border: 20px solid red; */
             text-align: center;
             margin: 100px 0;
             font-size: 35px;
         }
-        .mid-sec{
+
+        .mid-sec {
             /* border: 5px solid green; */
             margin-bottom: 100px;
         }
-        main{
+
+        main {
             margin-bottom: 200px;
-        } 
-        .item-img{
+        }
+
+        .item-img {
             /* border: 2px solid red; */
             height: 300px;
         }
-        .item-card{
+
+        .item-card {
             width: 329px;
-            height: 476px;  
+            height: 476px;
             /* border: 2px solid red; */
             padding: 10px;
             box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, .05);
             border-radius: 10px;
         }
-        .item-details{
+
+        .item-details {
             font-size: 14px;
             color: #787885;
             font-weight: 700;
         }
-        .item-card h3{
+
+        .item-card h3 {
             font-size: 25px;
         }
-        .item-listing{
+
+        .item-listing {
             /* border: 2px solid green; */
             display: grid;
-            grid-template-columns: repeat(3 , 1fr);
+            grid-template-columns: repeat(3, 1fr);
             row-gap: 20px;
             padding: 50px;
             /* text-align: center; */
             margin-left: auto;
             margin-right: auto;
-            
+
         }
-        .item-rating{
+
+        .item-rating {
             display: flex;
         }
-        .fa-star{
-             height: 15px;
-             width: 15px;
-             /* padding-left: 10px; */
+
+        .fa-star {
+            height: 15px;
+            width: 15px;
+            /* padding-left: 10px; */
         }
-        .number-rating{
+
+        .number-rating {
             font-size: 14px;
             text-align: center;
             /* vertical-align: auto; */
@@ -135,33 +160,38 @@
             width: 15px;
             margin-left: 25px;
         }
-        .see-more span{
+
+        .see-more span {
             color: #E02C6D;
             font-weight: 700;
         }
-        .see-more{
+
+        .see-more {
             display: flex;
             justify-content: flex-end;
             margin-right: 100px;
         }
-        .footer h3{
+
+        .footer h3 {
             /* .menu-heading{ */
-           font-size: 24px;
-           font-weight: 700; 
+            font-size: 24px;
+            font-weight: 700;
         }
-        .footer-container{
+
+        .footer-container {
             /* border: 15px solid red; */
             /* padding: 30px; */
             text-align: center;
         }
 
-        .footer-container p{
+        .footer-container p {
             font-size: 12px;
         }
-        footer{
+
+        footer {
             background-color: #0A0826;
             /* background: violet; */
-            height:200px;
+            height: 200px;
             padding-top: 50px;
             padding-bottom: 40px;
             /* font-family: 'Moon Dance', cursive; */
@@ -170,19 +200,23 @@
             position: absolute;
             left: 0;
             right: 0;
-            
+
         }
-        .extra-section h1{
+
+        .extra-section h1 {
             font-size: 40px;
             text-align: center;
         }
-        figure{
+
+        figure {
             border: 2px solid red;
         }
-        #slider{
+
+        #slider {
             overflow: hidden;
         }
-        #slider figure{
+
+        #slider figure {
             position: relative;
             width: 500%;
             margin: 0;
@@ -193,6 +227,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/9be23e5cfb.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <!-- header starts here  -->
@@ -207,12 +242,13 @@
             <article class="half-width">
                 <h1>Start your Journey as Influencer</h1>
                 <br>
-                <p>To become a succesfull influencer ,gadgets and gears play a significant role. Working as the main tool for showcasing your talents to the world. Go to below for purchasing</p>
+                <p>To become a succesfull influencer ,gadgets and gears play a significant role. Working as the main
+                    tool for showcasing your talents to the world. Go to below for purchasing</p>
                 <br>
                 <button class="button-design">
                     <span>
                         Prebook now<i class="fas fa-arrow-right"></i>
-                    </span> 
+                    </span>
                 </button>
             </article>
             <div class="first-sec-img-side">
@@ -406,7 +442,7 @@
                         </div>
                         <div class="item-details">Worldwide shifting available. Buyer's protection possible</div>
                     </div>
-                </article>                
+                </article>
             </div>
             <aside class="see-more">
                 <span>
@@ -421,52 +457,31 @@
             <h1>Influencer's review</h1>
             <section class="carousel" aria-label="Gallery">
                 <ol class="carousel__viewport">
-                  <li id="carousel__slide1"
-                      tabindex="0"
-                      class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <a href="#carousel__slide4"
-                         class="carousel__prev">Go to last slide</a>
-                      <a href="#carousel__slide2"
-                         class="carousel__next">Go to next slide</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide2"
-                      tabindex="0"
-                      class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide1"
-                       class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide3"
-                       class="carousel__next">Go to next slide</a>
-                  </li>
-                  <li id="carousel__slide3"
-                      tabindex="0"
-                      class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide2"
-                       class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide4"
-                       class="carousel__next">Go to next slide</a>
-                  </li>
+                    <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                        <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                        <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                    </li>
                 </ol>
                 <aside class="carousel__navigation">
-                  <ol class="carousel__navigation-list">
-                    <li class="carousel__navigation-item">
-                      <a href="#carousel__slide1"
-                         class="carousel__navigation-button">Go to slide 1</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                      <a href="#carousel__slide2"
-                         class="carousel__navigation-button">Go to slide 2</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                      <a href="#carousel__slide3"
-                         class="carousel__navigation-button">Go to slide 3</a>
-                    </li>
-                  </ol>
+                    <ol class="carousel__navigation-list">
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                        </li>
+                    </ol>
                 </aside>
-              </section>
+            </section>
         </section>
     </main>
     <!-- main ends here  -->
@@ -474,15 +489,16 @@
     <footer>
         <div class="footer-container">
             <h3>Influencer products</h3>
-            <p>Copyright <i class="far fa-copyright"></i> 2020  influencer products</p>
+            <p>Copyright <i class="far fa-copyright"></i> 2020 influencer products</p>
             <p>All rights reserved</p>
             <span>
                 <a href=""><i class="fab fa-facebook"></i></a>
                 <a href=""><i class="fab fa-instagram"></i></a>
                 <a href=""><i class="fab fa-twitter-square"></i></a>
             </span>
-            
+
         </div>
     </footer>
 </body>
+
 </html>
